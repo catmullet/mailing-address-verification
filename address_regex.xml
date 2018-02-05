@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Countries>
+    <Country>
+        <Code>US</Code>
+        <Name>United States</Name>
+        <Regex>^\s*\S+(?:\s+\S+){2}</Regex>
+        <MustValidate>true</MustValidate>
+    </Country>
+    <Country>
+        <Code>DE</Code>
+        <Name>Germany</Name>
+        <Regex>^\s*\S+(?:\s+\S+){2}</Regex>
+        <MustValidate>false</MustValidate>
+    </Country>
+</Countries>
