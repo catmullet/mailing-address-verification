@@ -4,7 +4,6 @@ import (
 	"encoding/xml"
 	"io/ioutil"
 	"strings"
-	"os"
 )
 
 type Countries struct {
@@ -19,7 +18,7 @@ type Country struct {
 }
 
 func GetCountryRegex(codeOrName string) (string, bool, error) {
-	xmlFile, err := ioutil.ReadFile(os.Getenv("RFILE"))
+	xmlFile, err := ioutil.ReadFile("address_regex.xml")
 	if err != nil {
 		return "", false, err
 	}
